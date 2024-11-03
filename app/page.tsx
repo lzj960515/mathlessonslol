@@ -3,7 +3,7 @@ import GameFrame from './components/GameFrame';
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="py-6 px-4 bg-foreground/5">
+      <header className="py-6 px-4 bg-primary-100">
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold text-center">Math Lessons LOL</h1>
           <p className="text-xl text-center mt-2">Making Math Learning Fun</p>
@@ -17,15 +17,15 @@ export default function Home() {
         </section>
 
         <section className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="p-6 bg-foreground/5 rounded-lg">
+          <div className="p-6 bg-primary-50 rounded-lg">
             <h3 className="text-xl font-bold mb-2">Fun Learning</h3>
             <p>Experience mathematics through engaging gameplay and interactive challenges</p>
           </div>
-          <div className="p-6 bg-foreground/5 rounded-lg">
+          <div className="p-6 bg-primary-50 rounded-lg">
             <h3 className="text-xl font-bold mb-2">All Ages Welcome</h3>
             <p>From elementary to high school, we offer content for every skill level</p>
           </div>
-          <div className="p-6 bg-foreground/5 rounded-lg">
+          <div className="p-6 bg-primary-50 rounded-lg">
             <h3 className="text-xl font-bold mb-2">Instant Feedback</h3>
             <p>Track your progress in real-time and master mathematical concepts</p>
           </div>
@@ -45,7 +45,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-foreground/5 py-6 mt-12">
+      <footer className="bg-primary-100 py-6 mt-12">
         <div className="container mx-auto px-4 text-center">
           <p>© 2024 Math Lessons LOL. All rights reserved.</p>
           <div className="mt-2">
