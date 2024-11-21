@@ -31,3 +31,29 @@ body {
 .prose p {
   @apply mb-4;
 }
+
+.game-card {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.game-frame-wrapper {
+  @apply relative overflow-hidden rounded-xl;
+  background: linear-gradient(135deg, var(--tw-colors-primary-400), var(--tw-colors-primary-600));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  @apply relative inline-block text-2xl font-bold mb-6;
+}
+
+.section-title::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-1 bg-accent-500 rounded-full transform scale-x-0 transition-transform duration-300;
+}
+
+.section-title:hover::after {
+  @apply scale-x-100;
+}
